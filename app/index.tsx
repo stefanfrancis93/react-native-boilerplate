@@ -31,7 +31,7 @@ const CombinedDarkTheme = {
 const { persistor, store } = configureStore();
 
 export function RootNavigation() {
-  const isDark = useSelector(state => state.themeReducer.isDark);
+  const isDark = useSelector((state: any) => state.themeReducer.isDark);
   const theme = isDark ? CombinedDarkTheme : CombinedDefaultTheme;
 
   return (
